@@ -13,7 +13,7 @@ void main() async {
       theme: ThemeData(
         fontFamily: 'Onest',
         useMaterial3: true,
-        colorSchemeSeed: Colors.teal,
+        colorSchemeSeed: Colors.indigo,
       ),
       getPages: AppPages.pages,
       builder: (context, widget) {

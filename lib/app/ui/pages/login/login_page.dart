@@ -29,7 +29,7 @@ class LoginPage extends GetView<LoginController> {
                   const Text(
                     "Bienvenido/a al login!",
                     style: TextStyle(
-                      color: SECONDARY,
+                      color: Color.fromARGB(255, 89, 101, 172),
                       fontSize: 25,
                       fontWeight: FontWeight.w600,
                     ),
@@ -74,7 +74,8 @@ class LoginPage extends GetView<LoginController> {
                             },
                             style: ButtonStyle(
                               backgroundColor: MaterialStateColor.resolveWith(
-                                  (states) => Color.fromARGB(255, 176, 184, 230)),
+                                  (states) =>
+                                      const Color.fromARGB(255, 89, 101, 172)),
                               padding: const MaterialStatePropertyAll(
                                 EdgeInsets.symmetric(
                                   vertical: 13,

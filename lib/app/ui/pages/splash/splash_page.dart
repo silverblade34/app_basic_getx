@@ -1,4 +1,3 @@
-import 'package:app_basic_getx/app/ui/pages/home/home_page.dart';
 import 'package:app_basic_getx/app/ui/pages/login/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_slider/introduction_slider.dart';
@@ -24,13 +23,14 @@ class SplashPage extends StatelessWidget {
               "Agilizamos la gestión de tus procesos",
               textAlign: TextAlign.center,
               style: TextStyle(
-                  fontWeight: FontWeight.w600,
-                  fontSize: 25,
-                  fontFamily: 'Onest',
-                  color: Color.fromARGB(255, 255, 255, 255)),
+                fontWeight: FontWeight.w600,
+                fontSize: 25,
+                fontFamily: 'Onest',
+                color: Color.fromARGB(255, 54, 54, 54),
+              ),
             ),
           ),
-          backgroundColor: Color.fromARGB(255, 176, 184, 230),
+          backgroundColor: const Color.fromARGB(255, 252, 253, 255),
         ),
         IntroductionSliderItem(
           logo: Image.asset(
@@ -44,13 +44,14 @@ class SplashPage extends StatelessWidget {
               "Solo escanee el codigo QR del estudiante",
               textAlign: TextAlign.center,
               style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 24,
-                  fontFamily: 'Onest',
-                  color: Colors.white),
+                fontWeight: FontWeight.bold,
+                fontSize: 24,
+                fontFamily: 'Onest',
+                color: Color.fromARGB(255, 54, 54, 54),
+              ),
             ),
           ),
-          backgroundColor: Color.fromARGB(255, 176, 184, 230),
+          backgroundColor: const Color.fromARGB(255, 252, 253, 255),
         ),
         IntroductionSliderItem(
           logo: Image.asset(
@@ -64,13 +65,14 @@ class SplashPage extends StatelessWidget {
               "Lleve un registro de asistencias de manera rapida",
               textAlign: TextAlign.center,
               style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 24,
-                  fontFamily: 'Onest',
-                  color: Color.fromARGB(255, 255, 255, 255)),
+                fontWeight: FontWeight.bold,
+                fontSize: 24,
+                fontFamily: 'Onest',
+                color: Color.fromARGB(255, 54, 54, 54),
+              ),
             ),
           ),
-          backgroundColor: Color.fromARGB(255, 176, 184, 230),
+          backgroundColor: const Color.fromARGB(255, 252, 253, 255),
         ),
       ],
       done: Done(
@@ -85,21 +87,21 @@ class SplashPage extends StatelessWidget {
             color: Colors.white, // Color del icono
           ),
         ),
-        home: LoginPage(),
+        home: const LoginPage(),
       ),
       next: const Next(
         child: Icon(Icons.arrow_forward),
         style: ButtonStyle(
-          iconColor: MaterialStatePropertyAll(Colors.white),
+          iconColor: MaterialStatePropertyAll(Colors.indigo),
         ),
       ),
       back: const Back(
         child: Icon(Icons.arrow_back),
         style: ButtonStyle(
-          iconColor: MaterialStatePropertyAll(Colors.white),
+          iconColor: MaterialStatePropertyAll(Colors.indigo),
         ),
       ),
-      dotIndicator: const DotIndicator(selectedColor: Colors.white),
+      dotIndicator: const DotIndicator(selectedColor: Colors.indigo),
     );
   }
 }
