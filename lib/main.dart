@@ -11,7 +11,7 @@ void main() async {
       debugShowCheckedModeBanner: false,
       initialRoute: Routes.INITIAL,
       theme: ThemeData(
-        fontFamily: 'Roboto',
+        fontFamily: 'Onest',
         useMaterial3: true,
         colorSchemeSeed: Colors.teal,
       ),
